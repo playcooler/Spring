@@ -30,6 +30,8 @@ protected:
 	afx_msg void OnSysCommand(UINT nID, LPARAM lParam);
 	afx_msg void OnPaint();
 	afx_msg HCURSOR OnQueryDragIcon();
+	virtual void OnOK() {}
+	virtual void OnCancel() {}
 	DECLARE_MESSAGE_MAP()
 public:
 	afx_msg void OnBnClickedButtonDie();
@@ -49,4 +51,5 @@ public:
 	afx_msg HBRUSH OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor);
 	CStatic m_Static_Killed;
 	unsigned long iKilled;
+	afx_msg void OnClose();
 };

@@ -82,6 +82,7 @@ BEGIN_MESSAGE_MAP(CSpringDlg, CDialogEx)
 	ON_WM_NCPAINT()
 	ON_BN_CLICKED(IDC_CHECK_AUTOSTART, &CSpringDlg::OnBnClickedCheckAutostart)
 	ON_WM_CTLCOLOR()
+	ON_WM_CLOSE()
 END_MESSAGE_MAP()
 
 
@@ -438,4 +439,11 @@ HBRUSH CSpringDlg::OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor)
 
 	// TODO:  如果默认的不是所需画笔，则返回另一个画笔
 	return hbr;
+}
+
+
+void CSpringDlg::OnClose()
+{
+	// TODO: 在此添加消息处理程序代码和/或调用默认值
+	return;
 }
